@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>currency convert</title>
+</head>
+<body>
+<style>
+    td{
+        width: 150px;
+        text-align: center;
+    }
+</style>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Form curency</th>
+        <th>To curency</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td><input onchange="convertCurrency()" id="amount" type="number"></td>
+        <td>
+            <select id="from">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
+                <option value="0.84">EURO</option>
+                <option value="9000">LAOS</option>
+                <option value="105">YEN</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
+                <option value="0.84">EURO</option>
+                <option value="9000">LAOS</option>
+                <option value="105">YEN</option>
+            </select>
+        </td>
+        <td>
+            <botton type="botton" onclick="convertCurrency()">convert</botton>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function convertcurrency(){
+        let amount = +document.getElementById('amount').value;
+        let from = + document.getElementById('from');
+        let to = document.getElementById('to');
+        let result = 0;
+
+        result = amount * parseFloat(to.value)/parseFloat(form.value);
+
+        // document.getElementById('result').innerHTML = amount + from.options[from.selectedIndex].innerText + " convert to "+result+to.options[to.selectedIndex].innerText;
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+</body>
+</html>

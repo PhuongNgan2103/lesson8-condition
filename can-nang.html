@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI calculator</title>
+</head>
+<body>
+<script>
+    let weight = +prompt("nhap can nang");
+    let height = +prompt("nhap chieu cao");
+    let bmi =0 ;
+
+    // bmi = weight / (height*weight);
+    bmi = weight / Math.pow(height,2); // Math javascript
+
+    if (bmi < 18.5){
+        alert(bmi + ": Underweight");
+    }else if (bmi>=18.5 && bmi < 25){
+        alert(bmi + ": Normal");
+    }else if (bmi >= 25 && bmi , 30){
+        alert(bmi + ": Obese");
+    }
+
+</script>
+</body>
+</html>
