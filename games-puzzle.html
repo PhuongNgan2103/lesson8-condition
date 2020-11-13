@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games Puzzle</title>
+</head>
+<style>
+    img {
+        wight: 300px;
+        height: 300px;
+    }
+
+    #img1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    #img2 {
+        width: 300px;
+        height: 300px;
+    }
+
+    #img3 {
+        width: 300px;
+        height: 300px;
+    }
+
+    #img4 {
+        width: 300px;
+        height: 300px;
+    }
+
+    #img5 {
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+
+    <div>
+        <img id="img1" src="anhgoc/anh-1.jpg" onclick="thaydoianh(1)" alt="1">
+    </div>
+    <div>
+        <img id="img2" src="anhgoc/anh-2.jpg" onclick="thaydoianh(2)" alt="2">
+    </div>
+    <div>
+        <img id="img3" src="anhgoc/anh-3.jpg" onclick="thaydoianh(3)" alt="3">
+    </div>
+    <div>
+        <img id="img4" src="anhgoc/anh-4.jpg" onclick="thaydoianh(4)" alt="4">
+    </div>
+    <div>
+        <img id="img5" src="anhgoc/anh-5.jpg" onclick="thaydoianh(5)" alt="5">
+    </div>
+
+<script>
+    function thaydoianh(id) {
+        let img = document.getElementById('img' + id);
+        let index = + img.alt;
+        if (index < 5) {
+            index++;
+        } else {
+            index = 1
+        }
+        img.src = "anhgoc/anh-" + index + ".jpg";
+        img.alt = index;
+        checkWin();
+    }
+
+    function checkWin() {
+        let anh1 = document.getElementById("img1");
+        let anh2 = document.getElementById("img2");
+        let anh3 = document.getElementById("img3");
+        let anh4 = document.getElementById("img4");
+        let anh5 = document.getElementById("img5");
+        if (anh1.alt === anh2.alt && anh2.alt===anh3.alt && anh3.alt === anh4.alt && anh4.alt === anh5.alt) {
+          setTimeout(alertWin,100);
+        }
+
+    }
+    function alertWin() {
+        alert('Win rồi nhé!')
+
+
+    }
+</script>
+</body>
+</html>
