@@ -3,83 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>bt-mt-don-gian</title>
+</head>
 <style>
-    input {
-        font-family: "segoe UI";
-        font-size: 25px;
-        text-align: right;
-        color: blue;
-        width: 95%;
-        box-sizing: border-box;
-        margin: 5px;
+    td{
+        width: 80px;
+        height: 40px;
     }
-    table{
-        border: 5px solid black;
-        table-layout: fixed;
+    button{
+        width: 100%;
+        height: 100%;
     }
 </style>
-</head>
 <body>
-<table>
+<table border="1px">
     <tr>
-        <th id="inputrom" colspan="4">
-            <input type="text" id="input" placeholder="0" disabled="1">
-        </th>
+        <td id="screen" colspan="4"></td>
+
     </tr>
     <tr>
-        <th>
-            <button><b>1</b></button>
-        </th>
-        <th>
-            <button><b>2</b></button>
-        </th>
-        <th>
-            <button><b>3</b></button>
-        </th>
-        <th>
-            <button><b>+</b></button>
-        </th>
+        <td><button onclick="clickBtn('(')">(</button></td>
+        <td><button onclick="clickBtn(')')">)</button></td>
+        <td><button onclick="deleteOne()">DEL</button></td>
+        <td><button onclick="clearScreen()">AC</button></td>
     </tr>
     <tr>
-        <th>
-            <button><b>4</b></button>
-        </th>
-        <th>
-            <button><b>5</b></button>
-        </th>
-        <th>
-            <button><b>6</b></button>
-        </th>
-        <th><button><b>-</b></button></th>
+        <td><button onclick="clickBtn(7)">7</button></td>
+        <td><button onclick="clickBtn(8)">8</button></td>
+        <td><button onclick="clickBtn(9)">9</button></td>
+        <td><button onclick="clickBtn('/')">/</button></td>
     </tr>
     <tr>
-        <th>
-            <button><b>7</b></button>
-        </th>
-        <th>
-            <button><b>8</b></button>
-        </th>
-        <th>
-            <button><b>9</b></button>
-        </th>
-        <th>
-            <button><b>*</b></button>
-        </th>
+        <td><button onclick="clickBtn(4)">4</button></td>
+        <td><button onclick="clickBtn(5)">5</button></td>
+        <td><button onclick="clickBtn(6)">6</button></td>
+        <td><button onclick="clickBtn('*')">X</button></td>
     </tr>
     <tr>
-        <th>
-            <button><b>c</b></button>
-        </th>
-        <th>
-            <button><b>0</b></button>
-        </th>
-        <th>
-            <button><b>=</b></button>
-        </th>
-        <th>
-            <button><b>/</b></button>
-        </th>
+        <td><button onclick="clickBtn(1)">1</button></td>
+        <td><button onclick="clickBtn(2)">2</button></td>
+        <td><button onclick="clickBtn(3)">3</button></td>
+        <td><button onclick="clickBtn('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clickBtn(0)">0</button></td>
+        <td><button onclick="clickBtn('.')">.</button></td>
+        <td><button onclick="calculator()">=</button></td>
+        <td><button onclick="clickBtn('+')">+</button></td>
     </tr>
 </table>
+<script>
+    let screen = document.getElementById('screen');
+    function clickBtn(value) {
+        if(screen.innerText != '0'){
+            screen.innerText += value;
+        }else {
+            screen.innerText = value;
+        }
+
+    }
+
+    function calculator() {
+        let value = screen.innerText;
+        let result = eval(value);
+        screen.innerText = result;
+    }
+
+    function clearScreen() {
+        screen.innerText = '0';
+    }
+
+    function calPercent() {
+        let result = +screen.innerText/100;
+        screen.innerText = result;
+    }
+
+    function deleteOne() {
+        let str = screen.innerText;
+        let res = str.substring(0,str.length-1);
+        screen.innerText = res;
+    }
+</script>
 </body>
 </html>

@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38d46dfb-7d15-412f-8889-11414e6dadca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/anhgoc/anh-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anhgoc/anh-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anhgoc/anh-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anhgoc/anh-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anhgoc/anh-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bt-mt-don-gian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games-puzzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOYOULOVEME.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mt-don-gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/mt-don-gian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bt-mt-don-gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/bt-mt-don-gian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,20 @@
       <workItem from="1605145492194" duration="22400000" />
       <workItem from="1605184631501" duration="4687000" />
       <workItem from="1605229119986" duration="7520000" />
-      <workItem from="1605249633404" duration="4853000" />
+      <workItem from="1605249633404" duration="7212000" />
+      <workItem from="1605269822413" duration="72000" />
+      <workItem from="1605270780054" duration="77000" />
+      <workItem from="1605270986038" duration="52000" />
+      <workItem from="1605271317951" duration="184000" />
+      <workItem from="1605319054995" duration="1346000" />
+      <workItem from="1605323062887" duration="54000" />
+      <workItem from="1605331455372" duration="688000" />
+      <workItem from="1605332225545" duration="3000" />
+      <workItem from="1605338330578" duration="51000" />
+      <workItem from="1605338774051" duration="64000" />
+      <workItem from="1605339075413" duration="203000" />
+      <workItem from="1605342771449" duration="597000" />
+      <workItem from="1605349835093" duration="752000" />
     </task>
     <servers />
   </component>
